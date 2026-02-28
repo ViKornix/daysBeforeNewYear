@@ -26,6 +26,31 @@ npm run start:dev
 
 `http://localhost:3000`
 
+## Docker
+
+### Запуск через Docker Compose
+
+```bash
+docker compose up --build
+```
+
+Сервис будет доступен по адресу:
+
+`http://localhost:3000`
+
+### Остановка
+
+```bash
+docker compose down
+```
+
+### Запуск через Docker (без Compose)
+
+```bash
+docker build -t days-before-new-year .
+docker run --rm -p 3000:3000 days-before-new-year
+```
+
 ## API
 
 ### `GET /`
